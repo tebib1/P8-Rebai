@@ -1,0 +1,83 @@
+/*body*/
+
+body{
+    font-family: Montserrat;
+   
+
+    }
+    /*Main*/
+    @mixin main-page-home
+    {
+        max-width: 1440px;
+        margin: 0 auto; 
+        padding-right: 50px; 
+        padding-left: 50px;
+    }
+/* Color */
+
+$color-principal : #FF6060;
+
+$color-white : white;
+
+$color-gray : #F6F6F6;
+
+
+/* Display */
+
+@mixin display-header {
+    display: flex;
+    justify-content: space-between;
+}
+@mixin display-nav {
+    display: flex;
+    justify-content: space-around;
+}
+@mixin display-collapse 
+{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+@mixin display-collapses
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+@mixin page-error 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Margin & Padding */
+
+@mixin margin-left-right-desktop {
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
+@mixin margin-left-right-mobile {
+    margin-left: 20px;
+    margin-right: 20px;
+} 
+@mixin margin_collapses {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/* Font-weight */
+
+$weight-general : 500;
+
+/* width - height background */
+
+@mixin width_height_background 
+{
+    width: 100%;
+    height: 223px;
+border-radius: 25px;
+
+
+}

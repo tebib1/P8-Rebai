@@ -1,0 +1,55 @@
+
+
+.collapses {
+
+    @include display-collapses();
+    @include margin_collapses();
+    gap: 10px;
+
+    .collapse_title {
+        background-color: $color-principal;
+        width:73%;
+        height: 52px;
+        padding: 10px, 20px, 10px, 15px;
+        border-radius: 5px;
+        font-size: 24px;
+        line-height: 34px;
+        letter-spacing: 0em;
+        color: $color-white;
+        @include display-collapse();
+        padding-left: 20px;
+        padding-right: 20px;
+        
+            @media screen and (max-width: 800px) {
+                width: 100%;
+            }
+
+        img {
+            cursor: pointer;
+            
+        }
+    }
+
+    .text-collapse-about {
+        background-color: $color-gray;
+        width:73%;
+        color: $color-principal;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        padding: 20px;
+    margin: 0px;
+    animation: open 1s ease-in-out; 
+    overflow: hidden;
+ 
+    }
+
+    @keyframes open {
+        from { max-height: 0; }
+        to { max-height: 500px; } 
+    }
+
+    }
+   
+    

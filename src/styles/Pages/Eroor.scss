@@ -1,0 +1,52 @@
+
+
+.error {
+
+    img {
+        width: 597px;
+        height: 263px;
+        @include page-error();
+        margin: auto;
+        margin-top:100px ;
+        margin-bottom: 100px;
+        @media screen and (max-width: 991px){
+          width: 198px;
+height: 99px;
+
+          }
+          @media screen and (max-width: 800px) {
+            
+          }
+    }
+    .first_message {
+        color: $color-principal;
+        @include page-error();
+font-size: 36px;
+font-weight:$weight-general;
+line-height: 51px;
+letter-spacing: 0em;
+text-align: left;
+@media screen and (max-width: 991px){
+  align-items: center;
+  justify-content: center;
+  }
+  @media screen and (max-width: 800px) {
+    align-items: center;
+    justify-content: center;
+  }
+    }
+      .second_message{
+        color: $color-principal;
+        font-weight:$weight-general;
+        @include page-error();
+font-size: 18px;
+line-height: 26px;
+letter-spacing: 0em;
+text-align: left;
+margin-top: 100px;
+margin-bottom: 100px;
+      }
+      a{
+        text-decoration-color:$color-principal;
+      }
+}

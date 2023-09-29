@@ -1,0 +1,41 @@
+
+.header {
+    margin: 50px auto 0px  auto; 
+        padding-right: 50px; 
+        padding-left: 50px;
+    @include display-header();
+         .logo-header {
+            width: 210.32px;
+            height: 68px;
+         }
+        nav {
+            
+            font-size: 24px;
+            font-weight:$weight-general;
+            line-height: 34px;
+            letter-spacing: 0em;
+            text-align: right;
+            
+            .active {
+                text-decoration: $color-principal underline;
+                
+            }
+            }
+           
+ }
+ .navigation {
+    margin: 20px 20px 0 20px;
+    @include display-header();
+
+    nav {
+        @include display-nav();
+        padding: 0;
+        gap: 12px;
+        font-weight: $weight-general;
+        a{
+            color: $color-principal;
+            text-decoration: none;
+        }
+
+    }
+}

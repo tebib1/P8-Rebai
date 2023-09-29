@@ -1,0 +1,41 @@
+.collapsess {
+
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-between;
+  margin-bottom:50px ;
+  .align{
+    display: flex;
+    flex-direction: column;
+    width: 43%;
+    align-self: start;
+    
+  }
+    .collapse_title {
+      background-color: $color-principal;
+      
+      height: 52px;
+      padding: 10px, 20px, 10px, 15px;
+      border-radius: 5px;
+      font-size: 24px;
+      line-height: 34px;
+      letter-spacing: 0em;
+      color: $color-white;
+      @include display-collapse();
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    .text-collapse-about {
+      background-color: $color-gray;
+      color: $color-principal;
+      display: flex;
+      
+      padding: 20px;
+      
+  
+    }
+    
+  }

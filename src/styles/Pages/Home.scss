@@ -1,0 +1,33 @@
+
+
+main {
+
+    @include main-page-home();
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        background: #F6F6F6;
+        border-radius: 25px;
+        padding: 50px;
+        margin-bottom: 50px;
+        
+        @media screen and (max-width: 800px){
+            flex-direction: column;
+        }
+        a {
+            text-decoration: none;
+            width: 31%;
+            @media screen and (max-width: 991px){
+            width: 49%;
+            }
+            @media screen and (max-width: 800px) {
+                width: 100%;
+            }
+        }
+    }
+    
+ 
+}

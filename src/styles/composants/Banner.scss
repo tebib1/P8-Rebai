@@ -1,0 +1,30 @@
+
+
+.banner {
+    position: relative;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    .image_banner {
+        @include width_height_background ();
+        filter: brightness(60%);
+        
+        
+    }
+    .text1_home{
+        
+font-size: 48px;
+font-weight: 500;
+line-height: 68px;
+letter-spacing: 0em;
+text-align: left;
+color:$color-white;
+position:absolute;
+@media screen and (max-width: 800px){
+    width:80%;
+}
+    }
+}

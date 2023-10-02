@@ -14,13 +14,14 @@ function Home() {
     <div>
       <Header/>
       <main className='home_body'>
+        <div className="banner_home">
         <Banner
         divbanner="medium"
-        img={background}
+        img={background }
       alt="Image de montagne"
       text="Chez vous, partout et ailleurs"
         />
-
+</div>
         <div className='cards'>
           {data.map(cardData => (
             <Cards

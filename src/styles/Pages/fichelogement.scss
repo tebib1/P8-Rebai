@@ -1,21 +1,114 @@
-.collapsess {
+main {
 
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content:space-between;
-  margin-bottom:50px ;
-  .align{
-    display: flex;
-    flex-direction: column;
-    width: 43%;
-    align-self: start;
+    .slide{
+      position: relative;
+  .picture{
+    width: 100%;
+      height: 415px;
+      border-radius:25px;
+      background: cover;
+      margin-top: 50px;
     
+
   }
+  .slideright, .slideleft{
+    position: absolute;
+    top: 45%;
+    cursor: pointer;
+    width: 47px;
+    height: 79px;
+  }
+  .slideright{
+    left: 20px;
+  }
+  .slideleft{
+    right: 20px;
+  }
+}
+
+.box{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  .title-housing{
+    color: $color-principal;
+    margin:0px;
+  }
+  .second-title-housing{
+    font-size: 18px;
+    color: $color-principal;
+  }
+.alignement_name{
+  display: flex;
+  
+  .name-host{
+font-size: 18px;
+color: $color-principal;
+width: 93px;
+  }
+  .picture-host{
+    border-radius: 50%;
+    width: 64px;
+height: 64px;
+
+  }
+}
+}
+
+  .alignement_tags {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    .tag-box {
+      display: flex;
+      gap: 30px;
+
+      .tag {
+
+        padding-right: 20px;
+        border-radius: 10px;
+        background-color: $color-principal;
+        color: $color-white;
+        padding: 2px 20px 2px 20px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        height: 18px;
+        font-size: 14px;
+        margin: auto;
+      }
+    }
+    .rating-stars {
+      display:flex;
+      .stars{
+        width: 24.75px;
+height: 24px;}
+    }
+  }
+
+  .collapsess {
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    @include main-page-home();
+    padding: 0px;
+margin-bottom: 40px;
+    @media screen and (max-width: 800px) {}
+
+    .align {
+      display: flex;
+      flex-direction: column;
+      width: 43%;
+      align-self: start;
+
+    }
+
     .collapse_title {
       background-color: $color-principal;
-      
       height: 52px;
       padding: 10px, 20px, 10px, 15px;
       border-radius: 5px;
@@ -26,16 +119,18 @@
       @include display-collapse();
       padding-left: 20px;
       padding-right: 20px;
+
     }
-  
+
     .text-collapse-about {
       background-color: $color-gray;
       color: $color-principal;
       display: flex;
-      
+
       padding: 20px;
-      
-  
+
+
     }
-    
+
   }
+}

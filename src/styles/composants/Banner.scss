@@ -10,8 +10,9 @@
         margin-bottom: 30px;
     .image_banner {
         @include width_height_background ();
-        filter: brightness(60%);
-        
+        @media screen and (max-width: 800px){
+height: 111px;
+}
         
     }
     .text1_home{
@@ -23,8 +24,19 @@ letter-spacing: 0em;
 text-align: left;
 color:$color-white;
 position:absolute;
+@media screen and (max-width: 991px){
+    width: 49%;
+    font-size: 30px;
+    line-height: 24px;
+    }
 @media screen and (max-width: 800px){
-    width:80%;
+    text-align: left;
+font-size: 24px;
+line-height: 24px;
+width:70%;
+display: flex;
+align-items: start;
+justify-content: start;
 }
     }
 }

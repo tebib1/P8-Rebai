@@ -1,29 +1,45 @@
-
 .header {
-    margin: 50px auto 0px  auto; 
-        padding-right: 50px; 
-        padding-left: 50px;
+    margin: 50px auto 0px auto;
+    padding-right: 50px;
+    padding-left: 50px;
     @include display-header();
-         .logo-header {
-            width: 210.32px;
-            height: 68px;
-         }
-        nav {
-            
-            font-size: 24px;
-            font-weight:$weight-general;
-            line-height: 34px;
-            letter-spacing: 0em;
-            text-align: right;
-            
-            .active {
-                text-decoration: $color-principal underline;
-                
-            }
-            }
-           
- }
- .navigation {
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 800px) {
+       padding-right:7px;
+       padding-left: 15px;
+
+    }
+
+    .logo-header {
+        width: 210.32px;
+        height: 68px;
+
+        @media screen and (max-width: 800px) {
+            width: 145px;
+            height: 46.88px;
+    
+        }
+    }
+
+    nav {
+
+        font-size: 24px;
+        font-weight: $weight-general;
+        line-height: 34px;
+        letter-spacing: 0em;
+        text-align: right;
+       
+        .active {
+            text-decoration: $color-principal underline;
+
+        }
+    }
+
+}
+
+.navigation {
     margin: 20px 20px 0 20px;
     @include display-header();
 
@@ -32,9 +48,16 @@
         padding: 0;
         gap: 12px;
         font-weight: $weight-general;
-        a{
+
+        a {
             color: $color-principal;
             text-decoration: none;
+            @media screen and (max-width: 800px) {
+                font-size: 12px;
+                font-weight: bold;
+                text-transform: uppercase; 
+              }
+      
         }
 
     }

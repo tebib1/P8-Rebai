@@ -3,6 +3,10 @@
 main {
 
     @include main-page-home();
+    
+    .banner_home img {
+        filter:brightness(60%);
+    }
 
     .cards {
         display: flex;
@@ -16,6 +20,9 @@ main {
         
         @media screen and (max-width: 800px){
             flex-direction: column;
+            background-color: white;
+            padding: 0px;
+            gap: 20px;
         }
         a {
             text-decoration: none;
@@ -25,6 +32,7 @@ main {
             }
             @media screen and (max-width: 800px) {
                 width: 100%;
+                height: 225px;
             }
         }
     }

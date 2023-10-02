@@ -1,12 +1,28 @@
-
-
-.footer {
-    width: 100%;
-    height: 209px;
-    padding: 66px, 464px, 29px, 463px;
-
-    .backgrounfooter {
-        width: 100%;
+footer {
+ background-color:black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 66px;
+    padding-bottom: 58px;
+    
+    &__img {
+        width: 122px;
     }
-
+    p {
+        color: $color-white;
+      font-size: 24px;
+    }
+    @media screen and (max-width: 800px) { 
+        padding-bottom: 29px;
+        img{
+            width: 122px;
+     height: 39.44px;
+        }
+        p {
+            font-size: 12px;
+            width:30% ;
+            
+        }
+    }
 }

@@ -4,8 +4,8 @@
 
     @include display-collapses();
     @include margin_collapses();
-    gap: 10px;
-
+  gap:20px;
+    
     .collapse_title {
         background-color: $color-principal;
         width:73%;
@@ -19,9 +19,9 @@
         @include display-collapse();
         padding-left: 20px;
         padding-right: 20px;
-        
+      
             @media screen and (max-width: 800px) {
-                width: 100%;
+                width: 89%;
             }
 
         img {
@@ -39,10 +39,15 @@
         justify-content: center;
         align-content: center;
         padding: 20px;
-    margin: 0px;
+        margin: 0px;
     animation: open 1s ease-in-out; 
     overflow: hidden;
- 
+    position: relative;
+    top:-20px;
+    @media screen and (max-width: 800px) {
+        width: 89%;
+        
+    }
     }
 
     @keyframes open {

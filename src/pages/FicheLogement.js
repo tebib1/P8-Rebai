@@ -7,7 +7,7 @@ import starActive from '../assets/starActive.png';
 import starInactive from '../assets/starInactive.png';
 import Slide from "../components/Slide";
 
-  
+
 const FicheLogement = () => {
   const { id } = useParams();
   const selectedHousing = data.find((item) => item.id === id);
@@ -31,28 +31,32 @@ const FicheLogement = () => {
       <main>
         <div>
 
-     
-    
-      <Slide pictures={selectedHousing.pictures} />
-      <div className="box">
-        <div>
-      <h2 className="title-housing">{selectedHousing.title}</h2>
-            <p className="second-title-housing">{selectedHousing.location}</p>
-            </div>
-            <div className="alignement_name">
-            <p className="name-host">{selectedHousing.host.name}</p>
-              <img className="picture-host" src={selectedHousing.host.picture}  alt={selectedHousing.host.name}  />
-              </div>
-              </div>
-          <div className="alignement_tags">
-          <div className="tag-box">
-              {selectedHousing.tags.map((tag, index) => (
-                <div key={index} className="tag">
-                  {tag}
+
+
+          <Slide pictures={selectedHousing.pictures} />
+          <div className="box">
+            <div>
+              <h2 className="title-housing">{selectedHousing.title}</h2>
+              <p className="second-title-housing">{selectedHousing.location}</p>
+              <div className="alignement_tags">
+                <div className="tag-box">
+                  {selectedHousing.tags.map((tag, index) => (
+                    <div key={index} className="tag">
+                      {tag}
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
-            <div className="rating-stars">{ratingStars}</div>
+              </div>
+              </div>
+              <div className="box_name_start">
+                <div className="alignement_name">
+                  <p className="name-host">{selectedHousing.host.name}</p>
+                  <img className="picture-host" src={selectedHousing.host.picture} alt={selectedHousing.host.name} />
+                </div>
+                <div className="rating-stars">{ratingStars}</div>
+              </div>
+            
+
           </div>
           <div className="collapsess">
             <div className="align">

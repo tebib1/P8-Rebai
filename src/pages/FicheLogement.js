@@ -67,10 +67,22 @@ const FicheLogement = () => {
               />
             </div>
             <div className="align">
-              <CollapseItem
+            <CollapseItem
                 title="Equipements"
-                content={selectedHousing.equipments}
-              />
+                content=""
+              >
+                
+                <ul>
+                {selectedHousing.equipments.map((equipement, index) => {
+                  return (
+                    <li key={equipement + index}>
+                      {equipement}
+                    </li>
+                  )
+                })}
+                </ul>
+      
+              </CollapseItem>
             </div>
           </div>
         </div>

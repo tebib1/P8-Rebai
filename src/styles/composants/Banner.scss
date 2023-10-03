@@ -24,10 +24,12 @@ letter-spacing: 0em;
 text-align: left;
 color:$color-white;
 position:absolute;
+font-weight: bold;
 @media screen and (max-width: 991px){
     width: 49%;
     font-size: 30px;
     line-height: 24px;
+    font-weight: normal;
     }
 @media screen and (max-width: 800px){
     text-align: left;

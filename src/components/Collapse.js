@@ -5,7 +5,7 @@ import flechedown from '../assets/fleche_down.png';
 
 
 
-const CollapseItem = ({ title, content }) => {
+const CollapseItem = ({ title, content,children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleCollapse = () => {
@@ -23,7 +23,9 @@ const CollapseItem = ({ title, content }) => {
 
       </div>
      
-      {isOpen && <p className="text-collapse-about">{content}</p>}
+      {isOpen && content && <p className="text-collapse-about">{content}</p>}
+
+      {isOpen && children && <p className="text-collapse-about">{children}</p>}
     
     </>
   );

@@ -1,5 +1,8 @@
 main {
 
+  img{
+    object-fit: cover;
+  }
 
   .slide {
     position: relative;
@@ -36,6 +39,12 @@ main {
     .slideleft {
       right: 20px;
     }
+    .slide-counter{
+      position: absolute;
+      left: 50%;
+      bottom: 5%;
+      color: white;
+    } 
   }
 
   .box {
@@ -51,11 +60,14 @@ main {
     .title-housing {
       color: $color-principal;
       margin: 0px;
+      margin-bottom: 10px;
+      font-weight: bold;
     }
 
     .second-title-housing {
       font-size: 18px;
       color: $color-principal;
+      margin-bottom: 24px;
     }
 
     .alignement_tags {
@@ -69,22 +81,40 @@ main {
 
         .tag {
 
-          padding-right: 20px;
           border-radius: 10px;
           background-color: $color-principal;
           color: $color-white;
-          padding: 2px 20px 2px 20px;
+          padding:13px 33px 13px 33px;
           justify-content: center;
           display: flex;
           align-items: center;
-          height: 18px;
           font-size: 14px;
           margin: auto;
+         
+height:25px;
+top: 705px;
+@media screen and (max-width: 800px) {
+  padding:3px 20px 3px 20px;
+}
+
         }
       }
     }
 
     .box_name_start {
+      .rating-stars {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        @media screen and (max-width: 800px) {
+        }
+
+        .img {
+          width: 24.75px;
+          height: 24px;
+        }
+      }
 
       @media screen and (max-width: 800px) {
         display: flex;
@@ -93,13 +123,16 @@ main {
       }
       .alignement_name {
         display: flex;
-
-        
+       justify-content: space-between;
+        margin-bottom: 10px;
 
         .name-host {
           font-size: 18px;
           color: $color-principal;
           width: 93px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
 
         .picture-host {
@@ -110,18 +143,7 @@ main {
         }
 
 
-        .rating-stars {
-          display: flex;
-    justify-content: center;
-    align-items: center;
-          @media screen and (max-width: 800px) {
-          }
-
-          .stars {
-            width: 24.75px;
-            height: 24px;
-          }
-        }
+        
       }
     }
 
@@ -153,7 +175,7 @@ main {
     .align {
       display: flex;
       flex-direction: column;
-      width: 43%;
+      width: 47%;
       align-self: start;
       @media screen and (max-width: 800px) {
         width: 100%;}

@@ -1,4 +1,5 @@
-import { useParams } from "react-router-dom";
+import React from 'react';
+import { useParams} from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import CollapseItem from '../components/Collapse';
@@ -6,11 +7,16 @@ import data from '../data/data.json';
 import starActive from '../assets/starActive.png';
 import starInactive from '../assets/starInactive.png';
 import Slide from "../components/Slide";
+import Erreur from './Erreur';
 
 
 const FicheLogement = () => {
   const { id } = useParams();
   const selectedHousing = data.find((item) => item.id === id);
+
+  if (!selectedHousing) {
+    return <Erreur />; 
+  }
 
   const ratingStars = [];
   for (let i = 1; i <= 5; i++) {
@@ -23,7 +29,6 @@ const FicheLogement = () => {
       />
     );
   }
-
 
   return (
     <div>
